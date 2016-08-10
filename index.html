@@ -2,18 +2,18 @@
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
 venue: "RNAseq analysis in R"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "LAB-14, 700 Swanston Street, Carlton VICTORIA 3053"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "Australian"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+address: "Royal Children’s Hospital, 50 Flemington Rd, Parkville VIC 3052"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "au"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "-37.800229, 144.964256"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "May 11-12, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: 2016-05-11      # use YYYY-MM-DD format like 2015-01-01
-enddate: 2016-05-12        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Belinda Phipson", "Maria Doyle", "Jovana Maksimovic", "Harriet Dashnow", "Matt Ritchie"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Jane Hawkey", "Sepideh Foroutan", "Ramyar Molania", "Chenkai Ma", "Luke Zappia", "Katrina Bell", "Anthony Hawkins", "Enid Lam", "Yih-Chih Chan", "Matt Wakefield", "Piyush Madhamshettiwar"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+latlng: "-37.7934, 144.9494"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Sept 21 and 23, 2016"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:30 am - 4:30 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-09-21      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2016-09-23        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Belinda Phipson", "Maria Doyle", "Jovana Maksimovic", "Matt Ritchie"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBA"]
 contact: "combine@combine.org.au"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: http://pad.software-carpentry.org/2016-05-11-RNAseq
+etherpad: http://pad.software-carpentry.org/2016-09-21-RNAseq
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
@@ -66,18 +66,20 @@ In this workshop, you will be learning how to analyse RNA-seq count data, using
 R. This will include reading the data into R, quality control and performing
 differential expression analysis and gene set testing, with a focus on the
 limma-voom analysis workflow. You will learn how to generate common plots for
-analysis and visualisation of gene expression data, such as boxplots and heatmaps.
-You will also be learning how alignment and counting of raw RNA-seq data can be
-performed in R. In addition, you will be introduced to Degust, a user-friendly
-interactive tool for RNA-seq analysis.  This workshop is aimed at biologists
-interested in learning how to perform differential expression analysis of
-RNA-seq data when reference genomes are available.
+analysis and visualisation of gene expression data, such as boxplots and
+heatmaps. This workshop is aimed at biologists interested in learning how to
+perform differential expression analysis of RNA-seq data when reference genomes
+are available.
 </p>
 
 <p>
-With special guest speakers
-<strong><a href="https://en.wikipedia.org/wiki/Alicia_Oshlack">Alicia Oshlack</a></strong> and
-<strong><a href="http://bioinf.wehi.edu.au/folders/shi/Wei_Shi.html">Wei Shi</a></strong>.
+There is an application process for this workshop. Please do not register/pay
+unless you have been invited to as part of the application process.
+</p>
+
+<p>
+Applications close: Monday 15th August. You can apply
+<a href="http://goo.gl/forms/Ico6MOvadgzCQtkS2">here</a>.
 </p>
 <!--
   AUDIENCE
@@ -117,15 +119,9 @@ With special guest speakers
 {% endif %}
 
 <p>
-Thank you to VLSCI for hosting this workshop.
+This workshop is brought to you in collaboration with the
+<a href="https://www.mcri.edu.au/research/themes/data-science/bioinformatics">MCRI Bioinformatics group</a>.
 </p>
-<p>
-<a href="http://www.vlsci.org.au/">
-    <img border="1" alt="VLSCI" src="https://combineau.files.wordpress.com/2015/05/logo_vlsci_rgb.jpg" height="80"></img></a>
-<a href="https://www.embl-abr.org.au/">
-    <img border="1" alt="EMBL Australian Bioinformatics Resource" src="https://www.embl-abr.org.au/wp-content/uploads/2016/03/logo.png" height="100"></img></a>
-</p>
-
 
 <!--
   SPECIAL REQUIREMENTS
@@ -207,20 +203,15 @@ Note: this is a preliminary schedule. There may be changes to the timing and con
 </p>
 <p>
 If you have any trouble installing the software or packages, please arrive
-at 8:45am on the first day so we can help before the workshop starts.
+at 9am on the first day so we can help before the workshop starts.
 </p>
-<p>
-In the first session of Day 1 we will cover some R skills that are particularly
-useful for RNAseq analysis, for example data frame manipulation, factors and
-subsetting using logical statements. If you are a more advanced R user, you may
-not need to attend this session.
-</p>
+
 
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>R for RNAseq</td> </tr>
+      <tr> <td>09:30</td>  <td>R for RNAseq</td> </tr>
       <tr> <td>11:00</td>  <td><i>Morning tea</i></td> </tr>
       <tr> <td>11:30</td>  <td>Introduction to RNA-seq theory</td> </tr>
       <tr> <td>12:00</td>  <td>Differential expression</td> </tr>
@@ -234,7 +225,7 @@ not need to attend this session.
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:30</td>  <td>Alignment and feature counting</td> </tr>
+      <tr> <td>09:30</td>  <td>TBA</td> </tr>
       <tr> <td>11:00</td>  <td><i>Morning tea</i></td> </tr>
       <tr> <td>11:30</td>  <td>Gene set testing</td> </tr>
       <tr> <td>13:00</td>  <td><i>Lunch</i></td> </tr>
@@ -458,7 +449,7 @@ and for that version you will also need to download this gfortran package
   <h4>R packages</h4>
   <p>
       You will also need to install the following R packages:
-      <strong>limma, edgeR, gplots, org.Mm.eg.db, EDASeq, RColorBrewer, GO.db, BiasedUrn, DESeq2, Glimma, Rsubread</strong>.
+      <strong>limma, edgeR, gplots, org.Mm.eg.db, EDASeq, RColorBrewer, GO.db, BiasedUrn, DESeq2, Glimma</strong>.
   </p>
   <p>
       These can all be obtained from <a href="https://www.bioconductor.org/">Bioconductor</a>, except for Glimma (see below).
@@ -489,18 +480,6 @@ and for that version you will also need to download this gfortran package
       We will install Glimma from source
       (Mac users: Glimma_0.99.5.tgz, Windows: Glimma_0.99.5.zip).
       We can help with this during the workshop.
-  </p>
-  <p>
-      <strong>Rsubread</strong>
-  </p>
-  <p>
-      Mac and Linux users can install Rsubread using
-  </p>
-  <p>
-      <code>> biocLite("Rsubread")</code>
-  </p>
-  <p>
-      Windows users will need to set up a GVL instance. Instructions to follow.
   </p>
 
   <p>
