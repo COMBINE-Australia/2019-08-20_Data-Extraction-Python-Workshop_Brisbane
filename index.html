@@ -388,9 +388,8 @@ You can find all of the lesson notes for this workshop
 <p>
 Even if you already have R installed, it is important that you have the latest
 version because some of the packages we will be using will not work with earlier
-versions of R. The latest version (available through the links below) is 3.2.5
-for Windows and 3.2.4 for Mac 10.9 and above. For Mac 10.6-10.8 the latest
-version is 3.2.1 (available from
+versions of R. The latest version (available through the links below) is 3.3.1.
+For Mac 10.6-10.8 the latest version is 3.2.1 (available from
 <a href = "https://cran.r-project.org/bin/macosx/">here</a>)
 and for that version you will also need to download this gfortran package
 <a href = "https://cran.r-project.org/bin/macosx/tools/gfortran-4.2.3.pkg">gfortran package</a>).
@@ -420,6 +419,8 @@ and for that version you will also need to download this gfortran package
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+      </p>
+      <p>
         Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
@@ -431,6 +432,8 @@ and for that version you will also need to download this gfortran package
         Install R by downloading and running
         <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
         from <a href="http://cran.r-project.org/index.html">CRAN</a>.
+      </p>
+      <p>
         Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
@@ -442,7 +445,10 @@ and for that version you will also need to download this gfortran package
         from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
         you can use your package manager (e.g. for Debian/Ubuntu
         run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
+        <code>sudo yum install R</code>).
+      </p>
+      <p>
+        Also, please install the
         <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
       </p>
     </div>
@@ -453,7 +459,7 @@ and for that version you will also need to download this gfortran package
       <strong>limma, edgeR, gplots, org.Mm.eg.db, EDASeq, RColorBrewer, GO.db, BiasedUrn, DESeq2, Glimma</strong>.
   </p>
   <p>
-      These can all be obtained from <a href="https://www.bioconductor.org/">Bioconductor</a>, except for Glimma (see below).
+      These can all be obtained from <a href="https://www.bioconductor.org/">Bioconductor</a>.
   </p>
   <p>
       Open RStudio and run the following commands to install packages from Bioconductor:
@@ -474,13 +480,7 @@ and for that version you will also need to download this gfortran package
       <code>…</code>
   </p>
   <p>
-      <code>> biocLite("RColorBrewer")</code>
-  </p>
-
-  <p>
-      We will install Glimma from source
-      (Mac users: Glimma_0.99.5.tgz, Windows: Glimma_0.99.5.zip).
-      We can help with this during the workshop.
+      <code>> biocLite("Glimma")</code>
   </p>
 
   <p>
