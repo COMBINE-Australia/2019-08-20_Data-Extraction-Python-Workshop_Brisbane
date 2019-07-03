@@ -1,20 +1,20 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "RNA-seq analysis in R"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Seminar Room 2, WEHI (1G Royal Parade, Parkville VIC 3051, Australia)"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+venue: "Unix Workshop"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "PeterMac Level 13 Board Room. 305 Grattan Street, Melbourne VIC 3000, Australia"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "au"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "-31.992507, 115.883858"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "September 26-27, 2018"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "9:00 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: 2018-09-26      # use YYYY-MM-DD format like 2015-01-01
-enddate: 2018-09-27        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["Shian Su", "Matt Ritchie"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Shani Amarasinghe", "Xueyi Dong"]
+latlng: "-37.799936, 144.956397"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "August 13, 2019"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+#startdate: 2018-09-26      # use YYYY-MM-DD format like 2015-01-01
+#enddate: 2018-09-27        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Sebastian Hollizeck"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Miriam Yeung", "Maria Doyle"]
 contact: "combine@combine.org.au"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: https://pad.carpentries.org/2018-09-26-RNAseq-Melbourne
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+# etherpad: https://pad.carpentries.org/2018-09-26-RNAseq-Melbourne
+# eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
 
@@ -65,10 +65,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 </p>
 
 
-<a href="https://www.wehi.edu.au/" title="WEHI">
-  <img alt="WEHI" src="https://www.wehi.edu.au/sites/default/files/WEHI_logo_2016_0.png" height="90" />
-</a>
-
 &nbsp;
 &nbsp;
 
@@ -88,14 +84,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-In this workshop, you will be learning how to analyse RNA-seq count data, using
-R. This will include reading the data into R, quality control and performing
-differential expression analysis and gene set testing, with a focus on the
-limma-voom analysis workflow. You will learn how to generate common plots for
-analysis and visualisation of gene expression data, such as boxplots and
-heatmaps. This workshop is aimed at biologists interested in learning how to
-perform differential expression analysis of RNA-seq data when reference genomes
-are available.
+This workshop will be your introduction to bash and a quick and easy way to automate your workflows and help you with reproducibility. We have a look at the most common questions as well as the do and don’ts, when working with UNIX/Bash.
 </p>
 
 <!--
@@ -106,14 +95,7 @@ are available.
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>Some basic R knowledge is assumed</strong>.
-  This is not an introduction to R course.
-  If you are not familiar with the R statistical programming language we
-  strongly encourage you to work through an introductory R course before you
-  attend this workshop. We recommend the Software Carpentry
-  <a href="http://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a>
-  lessons up to and including vectorisation (topic 9).
+  The course is aimed at graduate students and other researchers. You don’t need any prior bash experience, but a programming mindset helps.
 </p>
 
 <!--
@@ -141,10 +123,9 @@ are available.
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>).
+  <strong>Requirements:</strong> Participants must bring a laptop with a Mac or Linux operating system.
+If you bring a Mac, please have a look down below for further instructions.
+Should you only have access to a windows computer, please just contact use and we might be able to figure something out.
 </p>
 
 <!--
@@ -176,8 +157,7 @@ are available.
 
 <p>
   <strong>Registration:</strong> register
-  <a href="https://www.abacbs.org/rnaseq-analysis-in-r#!event-register/2018/9/26/rna-seq-analysis-in-r">here</a>.
-  Registration is $56/$62 for ABACBS members, and $80/$89 for non-members (for students/non-students respectively).
+  <a href="https://docs.google.com/forms/d/1tAgU_fUsSdwFJHGZr3-JDzmh4k_SxFH8sF9qyA2AN_4/prefill">here</a>.
 </p>
 
 <hr/>
@@ -215,30 +195,16 @@ at 9am on the first day so we can help before the workshop starts.
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Installation and set up</td> </tr>
-      <tr> <td>09:15</td>  <td>Introduction to RNA-seq theory</td> </tr>
-      <tr> <td>09:45</td>  <td>R for RNAseq</tr>
-      <tr> <td>10:30</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>11:00</td>  <td>Quality control and visualisation</tr>
-      <tr> <td>12:30</td>  <td><i>Lunch</i></td> </tr>
-      <tr> <td>13:30</td>  <td>Quality control and visualisation continued</td> </tr>
-      <tr> <td>15:00</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>15:30</td>  <td>Quality control and visualisation continued</td> </tr>
-      <tr> <td>17:00</td>  <td><i>Wrap-up</i></td> </tr>
-    </table>
-  </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Differential expression theory</td> </tr>
-      <tr> <td>09:30</td>  <td>Differential expression analysis</td> </tr>
-      <tr> <td>10:30</td>  <td><i>Break</i></td> </tr>
-      <tr> <td>11:00</td>  <td>Differential expression analysis continued</td> </tr>
-      <tr> <td>12:30</td>  <td><i>Lunch</i></td> </tr>
-      <tr> <td>13:30</td>  <td>Differential expression analysis and gene set testing</td> </tr>
-      <tr> <td>15:00</td>  <td><i>Wrap-up</i></td> </tr>
+      <tr> <td>09:30</td>  <td>Installation and set up</td> </tr>
+      <tr> <td>10:00</td>  <td>Introduction of the Shell</td> </tr>
+      <tr> <td>10:45</td>  <td>Navigating and working with directories</tr>
+      <tr> <td>11:35</td>  <td>Pipes and filters</td> </tr>
+      <tr> <td>13:00</td>  <td>Break</tr>
+      <tr> <td>13:30</td>  <td>Loops</td> </tr>
+      <tr> <td>14:15</td>  <td>Shell scripts</td> </tr>
+      <tr> <td>15:00</td>  <td>Finding things</td> </tr>
+      <tr> <td>15:45</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
 </div>
@@ -274,14 +240,14 @@ at 9am on the first day so we can help before the workshop starts.
   Old reference: http://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html
 
 -->
-<h2 id="syllabus">Syllabus</h2>
+<!--<h2 id="syllabus">Syllabus</h2>
 
 You can find all of the lesson notes for this workshop
-<a href="http://combine-australia.github.io/RNAseq-R/">here</a>.
+<a href="http://combine-australia.github.io/2019-08-13-Unix_Workshop-Melbourne/">here</a>.
 
 
 
-<hr/>
+<hr/>-->
 
 <!--
   SETUP
@@ -294,7 +260,7 @@ You can find all of the lesson notes for this workshop
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2 id="data">Data</h2>
+<!--<h2 id="data">Data</h2>
 
 <p>
   Please download these data files and save them to your laptop before the workshop:
@@ -302,129 +268,15 @@ You can find all of the lesson notes for this workshop
 <ul>
 <li>Mouse mammary data (counts): <a href="https://figshare.com/s/1d788fd384d33e913a2a" class="uri">https://figshare.com/s/1d788fd384d33e913a2a</a></li>
 </ul>
-</p>
+</p>-->
 
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in this workshop, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
+To participate in this workshop, you will need access to at least Bash Version 4, which should be installed on any of the recent linux distributions, however is not standard on Mac.
+
 </p>
 
 <p>
-Even if you already have R installed, it is important that you have the latest
-version because some of the packages we will be using will not work with earlier
-versions of R. The latest version (available through the links below) is 3.5.1.
-For Mac OS X (10.6 and above) the latest version is 3.5.1 (available from
-<a href = "https://cran.r-project.org/bin/macosx/">here</a>)
-and requires Clang 6.0.0 and GFortran (both available from
-<a href = "https://cran.r-project.org/bin/macosx/tools/">here</a>).
+If you bring your Mac, please install it before, or contact us, so we can help you before the course. The easiest way is homebrew following one of the answers in this thread https://apple.stackexchange.com/questions/193411/update-bash-to-version-4-0-on-osx
 </p>
-
-<p>
-  Software Carpentry maintains a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
-
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-      </p>
-      <p>
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-      </p>
-      <p>
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).
-      </p>
-      <p>
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-  <h4>R packages</h4>
-  <p>
-      You will also need to install the following R packages:
-      <strong>limma, edgeR, gplots, org.Mm.eg.db, org.Dm.eg.db, RColorBrewer, GO.db, BiasedUrn, DESeq2, Glimma</strong>.
-  </p>
-  <p>
-      If you are bringing your own data to analyse on Day 2, you should also install the annotation package for your species.
-      To find the name of the package you will need, look on the
-      <a href="http://bioconductor.org/packages/3.3/BiocViews.html#___AnnotationData">Bioconductor website</a>
-      (Search for "org." to see the organism packages).
-  </p>
-  <p>
-      These can all be obtained from <a href="https://www.bioconductor.org/">Bioconductor</a>.
-  </p>
-  <p>
-      Open RStudio and run the following commands to install packages from Bioconductor:
-  </p>
-  <p>
-      <code>> source("http://bioconductor.org/biocLite.R")</code>
-  </p>
-  <p>
-      <code>> biocLite("limma")</code>
-  </p>
-  <p>
-      Repeat this for each package.
-  </p>
-  <p>
-      <code>> biocLite("edgeR")</code>
-  </p>
-  <p>
-      <code>…</code>
-  </p>
-  <p>
-      <code>> biocLite("Glimma")</code>
-  </p>
-
-  <p>
-  Common problems:
-  <ul>
-    <li>If the source command doesn't work, try https instead of http.</li>
-    <li>Make sure you are directly connected to the internet and not using a proxy.</li>
-    <li>Make sure the package name is in quotes.</li>
-  </ul>
-  If you have any trouble please see the
-  <a href="https://www.bioconductor.org/install/">Instructions for installing Bioconductor packages</a>.
-  You can also arrive early on the first day of the workshop for help with set up.
-  </p>
-</div> <!-- End of 'R' section. -->
