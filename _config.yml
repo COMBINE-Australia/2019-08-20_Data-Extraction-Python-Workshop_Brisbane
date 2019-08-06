@@ -1,8 +1,8 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "https://github.com/COMBINE-Australia/2019-08-13-Unix_Workshop-Melbourne"
-workshop_site   : "http://combine-australia.github.io/2019-08-13-Unix_Workshop-Melbourne"
+workshop_repo   : "https://github.com/COMBINE-Australia/2019-08-20_Data-Extraction-Python-Workshop_Brisbane"
+workshop_site   : "http://combine-australia.github.io/2019-08-20_Data-Extraction-Python-Workshop_Brisbane"
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
